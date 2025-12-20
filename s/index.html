@@ -1,1 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .content-section {
+            background: white;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .content-section img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .content-text {
+            flex: 1;
+        }
+
+        .content-text h2 {
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+
+        .content-text p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .content-section {
+                flex-direction: column;
+            }
+
+            .content-section img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Welcome to my website</p>
+    </header>
+
+    <div class="container">
+        <div class="content-section">
+            <img src="https://via.placeholder.com/300x200/3498db/ffffff?text=Project+1" alt="Project 1">
+            <div class="content-text">
+                <h2>Project Title 1</h2>
+                <p>This is a description of your first project. You can add details about what you worked on, technologies used, and any interesting outcomes.</p>
+                <p>Replace the placeholder image with your own by changing the src attribute of the img tag.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <img src="https://via.placeholder.com/300x200/e74c3c/ffffff?text=Project+2" alt="Project 2">
+            <div class="content-text">
+                <h2>Project Title 2</h2>
+                <p>Another project description goes here. Talk about the challenges you faced and how you overcame them.</p>
+                <p>You can duplicate the content-section div to add more projects as you scroll down.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <img src="https://via.placeholder.com/300x200/2ecc71/ffffff?text=Project+3" alt="Project 3">
+            <div class="content-text">
+                <h2>Project Title 3</h2>
+                <p>Keep adding sections for each project or piece of content you want to showcase.</p>
+                <p>The layout is fully responsive and will stack vertically on mobile devices.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
